@@ -1,0 +1,23 @@
+<div class="container-fluid bg-warning border border-dark mt-1 p-3">
+  <div class="jumbotron border border-info">
+    <h1 class="display-3 text-center">¡¡Hola Mundo!!</h1>
+    <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal fluid space of its parent.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p *ngIf="jumbotronCreated; else noJumbotron" class="bg-success p-2 text-center text-white border border-dark border-width-4 rounded">¡jumbotron works!</p>
+    <p class="lead">
+      <a href="#"
+         role="button"
+         class="btn btn-sm border border-dark border-width-2"
+         [ngClass]="{'bg-success': jumbotronCreated === true, 'text-white': jumbotronCreated === true}">
+        Mas...
+      </a>
+    </p>
+  </div>
+</div>
+<ng-template #noJumbotron>
+  <p class="bg-warning p-2 text-center"
+     [ngStyle]="{backgroundColor: 'red', color: 'white'}">
+    ¡¡jumbotron <strong>CRASHED</strong>!!
+  </p>
+</ng-template>
