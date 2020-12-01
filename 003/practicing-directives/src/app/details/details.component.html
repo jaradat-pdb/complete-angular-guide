@@ -1,0 +1,12 @@
+<div class="container my-2">
+  <div class="d-flex flex-row justify-content-center" ng>
+    <a href="#"
+       role="button"
+       class="btn btn-secondary btn-lg" *ngIf="revealSecret; else hideButton">
+      Display Details
+    </a>
+  </div>
+</div>
+<ng-template #hideButton>
+  <p>The secret is that there are no details...</p>
+</ng-template>
