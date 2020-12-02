@@ -1,0 +1,21 @@
+<div class="container my-2 border border-secondary" (mouseleave)="isRevealSecret(); logEvent('mouseleave')">
+  <div class="d-flex flex-row justify-content-center">
+    <a href="#"
+       role="button"
+       class="btn btn-secondary btn-lg" *ngIf="!revealSecret; else hideButton"
+       (click)="logEvent('click')">
+      Display Details
+    </a>
+  </div>
+</div>
+<div class="container border border-success"
+    *ngFor="let event of events; let i = index"
+    [ngStyle]="{color: applyStyling(i) ? 'white' : 'black'}"
+    [ngClass]="{'bg-success': applyStyling(i)}">
+  <div class="d-flex flex-row justify-content-center">
+    {{ event }}
+  </div>
+</div>
+<ng-template #hideButton>
+  <p>The secret is that there are no details...</p>
+</ng-template>
