@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DetailComponent } from './detail/detail.component';
-import { ListComponent } from './list/list.component';
+import { RecipeListComponent } from './recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
 @NgModule({
   declarations: [
-    DetailComponent,
-    ListComponent
+    RecipeListComponent,
+    RecipeDetailComponent
   ],
   imports: [
     CommonModule

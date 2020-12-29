@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DetailComponent } from './detail/detail.component';
-import { ListComponent } from './list/list.component';
+import { TodoDetailComponent } from './todo-detail/todo-detail.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
-    DetailComponent,
-    ListComponent
+    TodoDetailComponent,
+    TodoListComponent
   ],
   imports: [
     CommonModule
