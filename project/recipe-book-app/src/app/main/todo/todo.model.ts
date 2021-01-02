@@ -1,9 +1,7 @@
 export class Todo {
-  private title: string;
   private content: string;
 
-  constructor(title: string, content: string) {
-    this.title = title;
+  constructor(public title: string, content: string) {
     this.content = content;
   }
 
@@ -13,14 +11,6 @@ export class Todo {
 
   setContent(content: string): void {
     this.content = content;
-  }
-
-  getTitle(): string {
-    return this.title;
-  }
-
-  setTitle(title: string): void {
-    this.title = title;
   }
 
 }
