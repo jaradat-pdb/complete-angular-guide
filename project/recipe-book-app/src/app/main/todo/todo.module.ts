@@ -9,6 +9,10 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     TodoDetailComponent,
     TodoListComponent
   ],
+  exports: [
+    TodoDetailComponent,
+    TodoListComponent
+  ],
   imports: [
     CommonModule
   ]
