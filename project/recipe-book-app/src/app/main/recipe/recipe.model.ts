@@ -32,5 +32,4 @@ export class Recipe {
   setName(name: string): void {
     this.name = name;
   }
-
 }

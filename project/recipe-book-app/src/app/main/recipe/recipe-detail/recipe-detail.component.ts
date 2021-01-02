@@ -10,5 +10,4 @@ export class RecipeDetailComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
 }
