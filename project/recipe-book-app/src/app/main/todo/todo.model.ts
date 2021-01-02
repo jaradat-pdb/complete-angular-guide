@@ -12,5 +12,4 @@ export class Todo {
   setContent(content: string): void {
     this.content = content;
   }
-
 }
