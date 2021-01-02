@@ -13,10 +13,11 @@ export class TodoListComponent implements OnInit {
     new Todo('Ex Todo', 'Example of content of a todo.')
   ];
 
-  constructor(logger: LoggerService) {
-    logger.log('TRACE', 'Inside TodoListComponent constructor');
+  constructor(private logger: LoggerService) {
+    this.logger.logConstruction(this.constructor.name);
   }
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.logger.logInitialization(this.constructor.name);
+  }
 }

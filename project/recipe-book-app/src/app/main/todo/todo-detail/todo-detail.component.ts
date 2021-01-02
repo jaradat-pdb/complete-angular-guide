@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LoggerService } from '../../../shared/services/logger/logger.service';
+
 @Component({
   selector: 'app-todo-detail',
   templateUrl: './todo-detail.component.html',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoDetailComponent implements OnInit {
 
-  constructor() {}
+  constructor(private logger: LoggerService) {
+    this.logger.logConstruction(this.constructor.name);
+  }
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.logger.logInitialization(this.constructor.name);
+  }
 }
