@@ -13,7 +13,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ],
   exports: [
     JumbotronComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule

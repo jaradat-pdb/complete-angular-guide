@@ -8,10 +8,12 @@ import { SharedModule } from './shared/shared.module';
 import { RecipeModule } from './main/recipe/recipe.module';
 import { TodoModule } from './main/todo/todo.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './main/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

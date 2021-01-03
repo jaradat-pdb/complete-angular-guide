@@ -1,9 +1,20 @@
+ul > li > a, button {
+  color: rebeccapurple;
+}
+
 .trademark-cus-font {
   color: #c1c1c1;
   font-family: "Permanent Marker", cursive;
   font-size: 23px;
 }
 
-ul > li > a {
-  color: rebeccapurple;
+/*
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
 }
+*/

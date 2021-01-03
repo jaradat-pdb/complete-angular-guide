@@ -1,1 +1,65 @@
-<p>sidebar works!</p>
+<nav id="sidebar" class="bg-secondary" [ngClass]="{active: sidebarActive}">
+  <div class="sidebar-header">
+    <h3 style="font-family: 'Permanent Marker', cursive; font-weight: bold;">RBA</h3>
+  </div>
+  <ul class="list-unstyled components">
+    <p>Dummy Heading</p>
+    <li class="active">
+      <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+      <ul class="collapse list-unstyled" id="homeSubmenu">
+        <li>
+          <a href="#">Home 1</a>
+        </li>
+        <li>
+          <a href="#">Home 2</a>
+        </li>
+        <li>
+          <a href="#">Home 3</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#todoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Todos</a>
+      <ul class="collapse list-unstyled" id="todoSubmenu">
+        <li>
+          <a href="#">Add</a>
+        </li>
+        <li>
+          <a href="#">Details</a>
+        </li>
+        <li>
+          <a href="#">List</a>
+        </li>
+        <li>
+          <a href="#">Remove</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#recipeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Recipes</a>
+      <ul class="collapse list-unstyled" id="recipeSubmenu">
+        <li>
+          <a href="#">Add</a>
+        </li>
+        <li>
+          <a href="#">Details</a>
+        </li>
+        <li>
+          <a href="#">List</a>
+        </li>
+        <li>
+          <a href="#">Remove</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Portfolio</a>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</nav>

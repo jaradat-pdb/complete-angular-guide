@@ -1,7 +1,13 @@
 <!-- TODO: polish this up -->
 <nav class="navbar navbar-expand-md navbar-light bg-success fixed-top"
         id="sharedNavbar">
-  <a href="#" class="navbar-brand trademark-cus-font">RBA</a>
+  <button type="button"
+          id="sidebarToggler"
+          class="btn btn-secondary d-none d-md-block mr-1"
+          (click)="toggleSidebar()">
+    <i class="fas fa-align-left"></i>
+  </button>
+  <a href="#" class="navbar-brand trademark-cus-font ml-md-2">RBA</a>
   <button class="navbar-toggler mr-auto mr-sm-0 ml-1 bg-warning"
           type="button"
           data-toggle="collapse"
@@ -14,14 +20,22 @@
   <div class="collapse navbar-collapse rounded mr-0 justify-content-end"
           id="navbarLinks">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item my-1 my-md-0">
         <a href="#" class="nav-link text-center bg-dark text-white">Home</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item mb-1 mb-md-0">
         <a href="#" class="nav-link text-center bg-warning">About</a>
       </li>
-      <li class="nav-item d-inline d-sm-none">
-        <a href="#" class="nav-link disabled text-center">Contact</a>
+      <li class="nav-item d-inline d-sm-none mb-1">
+        <a href="#" class="nav-link disabled text-center text-warning" style="background-color: #8a8a8a">Contact</a>
+      </li>
+      <li class="nav-item d-flex justify-content-center d-block d-md-none mb-1">
+        <button type="button"
+                id="collapsedSidebarToggler"
+                class="btn btn-warning text-center"
+                (click)="toggleSidebar()">
+          <span><i class="fas fa-align-left"></i> Toggle Sidebar</span>
+        </button>
       </li>
     </ul>
   </div>
