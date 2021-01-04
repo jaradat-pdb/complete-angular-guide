@@ -1,0 +1,6 @@
+app-sidebar.active {
+  margin-left: 0;
+}
+app-sidebar {
+  margin-left: -250px;
+}
