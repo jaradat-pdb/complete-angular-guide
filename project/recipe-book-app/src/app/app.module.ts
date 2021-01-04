@@ -9,13 +9,13 @@ import { RecipeModule } from './main/recipe/recipe.module';
 import { TodoModule } from './main/todo/todo.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './main/home/home.component';
-import { AppBodyComponent } from './view/app-body/app-body.component';
+import { BodyComponent } from './view/body/body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AppBodyComponent
+    BodyComponent
   ],
   imports: [
     BrowserModule,
